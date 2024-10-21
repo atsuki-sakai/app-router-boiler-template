@@ -1,0 +1,34 @@
+{
+    "home": {
+        "title": "ホーム",
+        "badge": "新着情報",
+        "latestRelease": "最新リリース",
+        "heading": "Webアプリケーションを超充実させる",
+        "description": "それは、あなたがあなたのために何をしたいですか？それは、あなたがそれを行うために必要なものです。",
+        "documentationBtn": "ドキュメント",
+        "githubBtn": "GitHub"
+    },
+    "about-us": {
+        "title": "私たちについて"
+    },
+    "contact": {
+        "title": "お問い合わせ"
+    },
+    "blog": {
+        "title": "ブログ"
+    },
+    "news": {
+        "title": "ニュース"
+    },
+    "service": {
+        "title": "サービス"
+    },
+    "price": {
+        "title": "料金"
+    },
+    "components": {
+        "common": {
+            "currentLanguage": "現在の言語"
+        }
+    }
+}
