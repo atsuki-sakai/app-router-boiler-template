@@ -34,3 +34,47 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Project Structure
+
+### ディレクトリ概要
+
+- **app/**: Next.jsアプリケーションのコードを言語別に整理しています。
+
+  - **[lang]/**: 異なる言語の動的ルートを処理します。
+
+    - **blog/**: ブログ関連のページ。
+    
+      - **[id]/page.tsx**: 個別ブログ投稿用の動的ページ。
+      
+      - **page.tsx**: ブログ一覧ページ。
+
+    - **news/**: ニュース関連のページ。
+
+      - **[id]/page.tsx**: 個別ニュースアイテム用の動的ページ。
+      
+      - **page.tsx**: ニュース一覧ページ。
+
+    - **page.tsx**: ホームページ。
+
+- **components/common/**: アプリケーション全体で使用される共通の再利用可能なコンポーネント。
+
+  - **BreadCrumb.tsx**: パンくずリストナビゲーションコンポーネント。
+  
+  - **LangSwitcher.tsx**: 言語切替コンポーネント。
+
+- **service/microcms/**: MicroCMSとの統合を担当するサービス層。
+
+  - **microcmsService.ts**: MicroCMS APIからデータを取得するサービスクラス。
+
+- **app/i18n/**: 国際化（i18n）の設定。
+
+  - **index.ts**: i18nの初期化と翻訳フックの提供。
+  
+  - **locales/**: ローカリゼーションファイル。
+
+    - **en/common.json**: 英語の翻訳ファイル。
+    
+    - **ja/common.json**: 日本語の翻訳ファイル。
+
+- **README.md**: プロジェクトのドキュメント。
